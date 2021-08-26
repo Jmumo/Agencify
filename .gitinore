@@ -1,3 +1,4 @@
 .idea
-src/Agencify-universal-dev.apk
-src/General-Store.apk
+./src/Agencify-universal-dev.apk
+./src/General-Store.apk
+
