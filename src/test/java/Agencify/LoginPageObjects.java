@@ -30,4 +30,7 @@ public class LoginPageObjects {
     @FindBy(xpath = "//*[@text = 'Login']")
     public  AndroidElement SigninButton;
 
+    @FindBy(id = "com.turnkeyafrica.agencify:id/textinput_error")
+    public AndroidElement PaaswordError;
+
 }
