@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -23,8 +24,8 @@ public class Login extends Base {
         loginPageObjects.SigninButton.click();
         loginPageObjects.PasswordTextBox.sendKeys("turnkey123");
         loginPageObjects.LoginButton.click();
-        String NoPassWordError = loginPageObjects.PaaswordError.getText();
-        Assert.assertEquals(NoPassWordError,"Doesn't look like an email");
+        String NoEmailError = loginPageObjects.EmailError.getText();
+        Assert.assertEquals(NoEmailError,"Doesn't look like an email");
         startserver().stop();
     }
 
@@ -37,7 +38,9 @@ public class Login extends Base {
         loginPageObjects.SigninButton.click();
         loginPageObjects.EmailTextBox.sendKeys("agencify@agent.com");
         loginPageObjects.LoginButton.click();
-
+        String NoPasswordError = loginPageObjects.PasswordError.getText();
+        Assert.assertEquals(NoPasswordError,"");
+       // Password must not be empty
         startserver().stop();
     }
 
