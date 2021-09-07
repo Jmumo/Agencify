@@ -28,7 +28,11 @@ public class Listeners implements ITestListener{
 		// TODO Auto-generated method stub
 		//screenshot 
 		String s=result.getName();
-		Base.getScreenshot(s);
+		try {
+			Base.getScreenShot(s);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 
 	}

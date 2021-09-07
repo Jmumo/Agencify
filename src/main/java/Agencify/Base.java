@@ -43,10 +43,6 @@ public class Base {
         return driver;
     }
 
-    public static void getScreenshot(String s) {
-    }
-
-
     public AppiumDriverLocalService startserver() {
         service = AppiumDriverLocalService.buildDefaultService();
         if (service.isRunning()) {
@@ -55,18 +51,12 @@ public class Base {
         service.start();
         return service;
     }
-//
-//    public static void getScreenShots(String FailedTestName) throws IOException {
-//        File ScreenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//        FileUtils.copyFile(ScreenShot,
-//                new File(System.getProperty("user.dir")+"\\"+FailedTestName+".png"));
-//    }
+
 
     public static void getScreenShot(String s) throws IOException
     {
         File scrfile=	((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrfile,new File(System.getProperty("user.dir")+"\\"+s+".png"));
-
+        FileUtils.copyFile(scrfile,new File(System.getProperty("user.dir").concat("/Screenshots")+"\\"+s+".png"));
     }
 
     @BeforeTest
