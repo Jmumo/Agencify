@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 331.63 s <<< FAILURE! - in TestSuite
+Agencify.Login.LoginWithNoPassword  Time elapsed: 49.738 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: com.turnkeyafrica.agencify:id/textinput_error
+	at Agencify.Login.LoginWithNoPassword(Login.java:41)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6f8f9349 (tried for 1 second(s) with 500 milliseconds interval)
+	at Agencify.Login.LoginWithNoPassword(Login.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-20S6TDS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\John Mumo\Desktop\..., appPackage: com.turnkeyafrica.agencify, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\John Mumo\Desktop\..., automationName: uiautomator2, deviceName: Android Device, platformName: android}, deviceApiLevel: 27, deviceManufacturer: TECNO MOBILE LIMITED, deviceModel: TECNO CA7, deviceName: 0329625863001980, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 0329625863001980, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: c4f12a99-2d5d-43f6-b7ca-d13d322cfbcd
+*** Element info: {Using=id, value=com.turnkeyafrica.agencify:id/textinput_error}
+	at Agencify.Login.LoginWithNoPassword(Login.java:41)
+
+Agencify.SignUp.SignUpWithNoEmail  Time elapsed: 44.492 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: com.turnkeyafrica.agencify:id/customerMobileNo
+	at Agencify.SignUp.SignUpWithNoEmail(SignUp.java:23)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@355e34c7 (tried for 1 second(s) with 500 milliseconds interval)
+	at Agencify.SignUp.SignUpWithNoEmail(SignUp.java:23)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-20S6TDS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\John Mumo\Desktop\..., appPackage: com.turnkeyafrica.agencify, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\John Mumo\Desktop\..., automationName: uiautomator2, deviceName: Android Device, platformName: android}, deviceApiLevel: 27, deviceManufacturer: TECNO MOBILE LIMITED, deviceModel: TECNO CA7, deviceName: 0329625863001980, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 0329625863001980, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 3e791dd2-35ad-4f36-bef6-960a3963f033
+*** Element info: {Using=id, value=com.turnkeyafrica.agencify:id/customerMobileNo}
+	at Agencify.SignUp.SignUpWithNoEmail(SignUp.java:23)
+
+Agencify.SignUp.SignUpWithNopassword  Time elapsed: 38.975 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[@text = 'Join now']
+	at Agencify.SignUp.SignUpWithNopassword(SignUp.java:56)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@31198ceb (tried for 1 second(s) with 500 milliseconds interval)
+	at Agencify.SignUp.SignUpWithNopassword(SignUp.java:56)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-20S6TDS', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\John Mumo\Desktop\..., appPackage: com.turnkeyafrica.agencify, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\John Mumo\Desktop\..., automationName: uiautomator2, deviceName: Android Device, platformName: android}, deviceApiLevel: 27, deviceManufacturer: TECNO MOBILE LIMITED, deviceModel: TECNO CA7, deviceName: 0329625863001980, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 0329625863001980, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1296, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: c929a997-8ea9-4c21-b5b4-437f44a468c6
+*** Element info: {Using=xpath, value=//*[@text = 'Join now']}
+	at Agencify.SignUp.SignUpWithNopassword(SignUp.java:56)
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="C:/Users/John Mumo/Desktop/Agencify_App/Agencify_App_Test(failed)">
+    <classes>
+      <class name="Agencify.SignUp">
+        <methods>
+          <include name="SignUpWithNopassword"/>
+          <include name="killNodes"/>
+          <include name="SignUpWithNoEmail"/>
+        </methods>
+      </class> <!-- Agencify.SignUp -->
+      <class name="Agencify.Login">
+        <methods>
+          <include name="LoginWithNoPassword"/>
+          <include name="killNodes"/>
+        </methods>
+      </class> <!-- Agencify.Login -->
+    </classes>
+  </test> <!-- C:/Users/John Mumo/Desktop/Agencify_App/Agencify_App_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

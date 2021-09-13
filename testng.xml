@@ -14,15 +14,10 @@
 <!--                </methods>-->
 <!--            </class>-->
             <class name="Agencify.Login">
-                <methods>
-                    <include name="Login"/>
-                </methods>
             </class>
-            <class name="org.example.AppTest">
-                <methods>
-                    <include name="shouldAnswerWithTrue"/>
-                </methods>
+            <class name="Agencify.SignUp">
             </class>
+
         </classes>
 
     </test>
