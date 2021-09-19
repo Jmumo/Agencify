@@ -39,8 +39,7 @@ public class Login extends Base {
         loginPageObjects.EmailTextBox.sendKeys("agencify@agent.com");
         loginPageObjects.LoginButton.click();
         String NoPasswordError = loginPageObjects.PasswordError.getText();
-        Assert.assertEquals(NoPasswordError,"");
-       // Password must not be empty
+        Assert.assertEquals(NoPasswordError,"Password must not be empty");
         startserver().stop();
     }
 
@@ -59,4 +58,5 @@ public class Login extends Base {
         loginPageObjects.LogoutButton.click();
         startserver().stop();
     }
+
 }
